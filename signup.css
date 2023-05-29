@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navi {
+  width: 960px;
+  height: 80px;
+  border-bottom: 2px solid #ce2d2d;
+  padding-bottom: 10px;
+}
+.navi ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 10px;
+}
+.navi ul li {
+  float: left;
+  width: 150px;
+  padding: 10px;
+}
+.navi a:link,
+.navi a:visited {
+  display: block;
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+.navi a:hover,
+.navi a:focus {
+  background-color: #ce2d2d;
+  color: #ffff;
+}
+.navi a:active {
+  background-color: #3a3a3a;
+}
+.contents {
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px dashed #312f2e;
+}
+#intro:target {
+  background-color: rgb(255, 224, 203);
+}
+#room:target {
+  background-color: #ffb488;
+}
+#reservation:target {
+  background-color: coral;
+}
+
+#signup {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+#signup fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#signup legend {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+#signup ul li {
+  list-style: none;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+#signup button {
+  padding: 7px 20px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#signup fieldset:first-of-type label {
+  /* float left로 이름, 빈칸 간격 맞춘다 */
+  float: left;
+  font-size: 13px;
+  width: 60px;
+}
+
+/* 입력창 */
+/* #signup input[type="text"],
+input[type="tel"] {
+  background-color: #ffe77a;
+  border: 1px solid #ccc;
+  padding: 3px;
+  width: 200px;
+  border-radius: 2px;
+} */
+
+/* 위에꺼랑 다른 방법 */
+#signup input:not([type="radio"]) {
+  border: 1px solid #ccc;
+  padding: 3px;
+  width: 200px;
+  border-radius: 2px;
+}
+#signup input:not([type="radio"]):hover {
+  border-color: #ce2d2d;
+}
+#signup input:checked + label {
+  color: #f81f1f;
+}

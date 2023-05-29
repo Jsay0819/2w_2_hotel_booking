@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>link 스타일</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navi">
+          <b><ul class="topMenu">
+            <li><a href="index.html#intro">이용 안내</li></a>
+            <li><a href="index.html#room">객실 소개</li></a>
+            <li><a href="index.html#reservation">예약 방법 및 요금</li></a>
+            <li><a href="#">예약하기</li></a> 
+          </b>
+            </ul>
+        </nav>
+        <form id="signup">
+          <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+              <li>
+                <label for="fullname">이름</label>
+                <input type="text" name="fullname" id="fullname" required>
+              </li>
+              <li>
+                <label for="fullname">연락처</label>
+                <input type="tel" name="tel" id="tel" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>객실 형태</legend> 
+              <ul>
+                <li>
+                  <input type="radio" name="room" id="basic">
+                  <label for="basic">기본형 (최대 2인)</label>
+                </li>
+                <li>
+                  <input type="radio" name="room" id="family">
+                  <label for="family">가족형 (최대 8인)</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit">제출</button>
+        </form>
+    </div>
+  </body>
+</html>

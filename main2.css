@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+.navi {
+width: 950px;
+height: 90px;
+border-bottom: 2px solid #002f75;
+padding-bottom: 5px;
+}
+.navi ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+}
+.navi ul li {
+    float: left;
+    width: 150px;
+    padding: 10px;
+}
+.navi a:link, a:visited {
+    display: block;
+    font-size: 15px;
+    color: #002f75;
+    padding: 10px;
+    text-decoration: none;
+}
+.navi a:hover, .navi a:focus {
+    background-color: rgb(255, 242, 171);
+    color: rgb(255, 115, 0);
+}
+.contents {
+width: 400px;
+padding: 30px;
+margin: 20px auto;
+border: 2px solid rgba(255, 136, 0, 0.2);
+border-radius: 10px;
+}
+#concert{
+    background-color: #5e9fff;
+}
+#musical{
+    background-color: #8dbbff;
+}
+#drama{
+    background-color: #cbe0ff;
+}
